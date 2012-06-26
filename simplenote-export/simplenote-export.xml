@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes>
+  
+  <note>
+    <key>agtzaW1wbGUtbm90ZXIqCxIETm90ZSIgZjFhZDA0MGZiZWNkMTFlMTk3NDY3Nzc4ZTNkNWJhZTYM</key>
+    <created>2012-06-26T14:20:26</created>
+    <modified>2012-06-26T14:20:26</modified>
+    <content># Desktop PC
+
+## Alternatives
+- Low power: 3500 SEK, http://www.prisjakt.nu/list.php?l=2161372&view=m
+- High performance: 4300 SEK, http://www.prisjakt.nu/list.php?l=2161351&view=m
+
+
+## Requirements
+- 8-16GB RAM
+- passive (or very silent) cooling
+- external PSU
+- VESA mount to install PC behind monitor
+- USB 3.0
+- SATA III (6 Gbps)
+- eSATA
+- GbE
+- integrated graphics with DVI
+- GPU should be able to handle dual monitors
+- no WLAN/Bluetooth
+- ev. Thunderbolt?
+
+## Intel Sandy/Ivy Bridge
+- Socket LGA 1155: http://en.wikipedia.org/wiki/LGA_1155
+- Intel GPUs have best open-source GPU drivers
+- CPU models with "S" or "T" mean low-power ("T" = lowest power)
+- CPU models with "K" mean "unlocked" -> good for overclocking
+
+### Core i3
+- see http://en.wikipedia.org/wiki/List_of_Intel_Core_i3_microprocessors)
+- 2 cores, 4 threads
+- hyper-threading
+- 3 MB L3 cache
+- 35W ("T") or 65W power consumption (TDP)
+
+### Core i5
+- see http://en.wikipedia.org/wiki/List_of_Intel_Core_i5_microprocessors)
+- 4 cores, 4 threads
+- no hyper-threading
+- 6 MB L3 cache
+- 45W ("T"), 65W ("S"), 77W (Ivy) or 95W (Sandy) power consumption (TDP)
+
+### Core i7
+- see http://en.wikipedia.org/wiki/List_of_Intel_Core_i7_microprocessors)
+- 4 cores, 8 threads
+- hyper-threading
+- 8 MB L3 cache
+- 45W ("T"), 65W ("S"), 77W (Ivy) or 95W (Sandy) power consumption (TDP)
+
+### Sandy Bridge
+- Chipsets: B651, H61, Q67, H67, P67, Z68
+- GPU: Intel HD 2000 or HD 3000
+- only higher-end i5 and i7 CPUs have HD 3000 GPU
+- 32nm
+
+### Ivy Bridge
+- Chipsets: B75, Q75, Q77, H77, Z75, Z77
+- GPU: Intel HD 2500 or HD 4000
+- only higher-end i5 and i7 CPUs have HD 4000 GPU
+- 22nm
+
+## AMD Fusion Llano/Trinity
+*Due to higher power consumption and bad GPU driver support, AMD is not an option*
+- Socket FM1
+- CPUs & chipsets: http://en.wikipedia.org/wiki/AMD_Fusion
+- CPU performance worse than Intel's
+- Better GPUs, but no good open-source drivers
+- Trinity not available yet
+
+## Enclosure
+### MiniBox M350
+- http://www.mini-box.com/M350-Enclosure-WITH-PICOPSU-150-XT-and-150W-Adapter-KIT
+- external 150W PSU
+- 102USD (ca. 720 SEK) exkl. taxes & shipping
+- VESA mountable (optional)
+- no optical drive bay
+
+### Antec ISK 310-150
+- http://www.prisjakt.nu/produkt.php?p=555265
+- external 150W PSU
+- optical drive bay
+- 685 SEK
+
+### Antec ISK 110 VESA
+- http://www.prisjakt.nu/produkt.php?p=555265
+- external 90W PSU
+- no optical drive bay
+- fanless
+- VESA mounting plate included
+- 1 80mm fan
+- 693 SEK
+
+</content>
+  </note>
+  
+  <note>
+    <key>agtzaW1wbGUtbm90ZXIqCxIETm90ZSIgODdmYTkyMzNiZTQ5MTFlMTg3ZjRhZDM5ZTIzYWI0NmEM</key>
+    <created>2012-06-24T22:11:22</created>
+    <modified>2012-06-24T22:11:22</modified>
+    <content>New note
+
+From mobile
+
+Client seems to suck... :-( </content>
+  </note>
+  
+  <note>
+    <key>agtzaW1wbGUtbm90ZXIqCxIETm90ZSIgNDUyNDg0ZjI1ZTg2Y2RmZmViNzRlMjkxMTRhZGM4NWEM</key>
+    <created>2012-06-24T21:38:27</created>
+    <modified>2012-06-24T22:09:09</modified>
+    <content>Testing
+======
+
+This is my first note writing in simplenote's web UI</content>
+  </note>
+  
+  <note>
+    <key>agtzaW1wbGUtbm90ZXIqCxIETm90ZSIgNGViN2VlM2I4YzNjMmZmMTc1ZmE0ODU2ZGMxZGJhODAM</key>
+    <created>2012-06-24T21:45:02</created>
+    <modified>2012-06-24T21:55:50</modified>
+    <content>#Multiseat configuration
+
+##Setup
+
+###Desk: seat0
+- Monitor:      Dell 21" (DVI)
+- GPU:           PCI-E x16 Radeon HD 5450
+- Keyboard:   Logitech wireless desktop keyboard
+- Mouse:        Logitech wireless desktop mouse
+
+###TV: seat1
+- Monitor: 	Sony TV 40" (HDMI)
+- GPU: 		PCI-E x1 Radeon HD 5450
+- Keyboard:	Apple Bluetooth keyboard
+- Mouse:		Logitech Air MX mouse
+- Remote:	USB IR receiver, Harmony One remote
+
+##X.org
+combination of OSS driver "radeon" (seat0) and propietary driver "fglrx" (seat1)
+see file:///home/mgrueter/Documents/IT/Multiseat/xorg.conf
+
+##Desktop manager
+LightDM
+see file:///home/mgrueter/Documents/IT/Multiseat/lightdm.conf
+
+Fedora 17 has out-of-the-box support for multiseat configurations using USB docking stations from Plugable (http://plugable.com) with help of systemd.
+http://www.amazon.co.uk/Plugable-DC-125-Docking-Keyboard-DisplayLink/dp/B004PXPPNA/ref=sr_1_1?ie=UTF8&qid=1339759312&sr=8-1
+
+##Problems
+
+###Internal Intel GPU unusable
+- Internal GPU (Intel) can not be used at the same time. BIOS seems to block that. That's why 2x Radeon GPUs are installed
+- Need to set Intel GPU as primary video adapter in BIOS otherwise it won't be available
+- If Radeon is set as primary video adapter, then Intel adapter can't be accessed by X server (not even visible with "lspci")
+- However once booted the X server can't be started on Radeon GPU (using fglrx). It seems as if  fglrx tries to activate the Intel GPU instead of the Radeon GPU. The following error message is repeated in log files:
+
+        fglrx(0): === [xdl_x760_atiddxPreInit] === begin
+
+
+###HDMI audio
+- The open source  "radeon" driver works best in multiseat setups. However this driver doesn't support HDMI audio (yet). A patch has been submitted as of Dec 2011 (http://www.phoronix.com/scan.php?page=news_item&px=MTAyMzA).
+- Official OSS radeon website: http://www.x.org/wiki/radeon
+- Until the OSS driver supports HDMI audio, the propietary ATI Catalyst ("fglrx") driver has to be used (at least for seat1). Unfortunately there are a few problems with using fglrx:
+
+###fglrx driver
+- This driver seems to have problems when used on 2 GPUs (kernel panics etc.) concurrently making it very unstable for use in multiseat setup (frequent crashes). That's why only seat1 run with fglrx and seat0 runs with radeon.
+- fglrx interferes with the OSS driver "radeon" and prevents it from starting 3D acceleration. This could be caused by the fglrx installation itself (files, kernel module, etc.) or by the fact that seat1 runs with propietary driver "fglrx" at the same time as seat0 uses "radeon".  
+    (see https://wiki.ubuntu.com/X/Troubleshooting/FglrxInteferesWithRadeonDriver).  
+    X outputs the following error message:
+
+            (EE) GLX error: Can not get required symbols
+
+- It's propietary
+- Unstable
+- Gnome-shell/unity rendering problems
+
+###udev device names not persistent
+- The udev device names are not reliably persistent: if the USB cables are unplugged and then plugged in again, the "persistent" device names in /dev/input/by-id and /dev/inpt/by-path change. As a consequence xorg.conf has to be updated with the correct input device names now and then.   
+    see https://bugs.launchpad.net/ubuntu/+source/udev/+bug/722411  
+    more information about udev: http://doc.opensuse.org/products/opensuse/openSUSE/opensuse-reference/cha.udev.html
+
+###Apple Bluetooth Keyboard connectin problems
+- Sometimes it's impossible to connect to the keyboard. Even removing it and re-pairing doens't solve it.
+- The bluetooth connection is user-based and configured from within GNOME. Is it possible to setup the keyboard system-wide so that it becomes available right after boot.  
+    see http://www.thetechrepo.com/main-articles/520-how-to-connect-an-apple-bluetooth-keyboard-toubuntu-troubleshooting
+
+###LightDM bug
+- LightDM doesn't add "-sharevts" to the X command line. This has to be manually appended in the config file.  
+    see https://bugs.launchpad.net/lightdm/+bug/903194
+</content>
+  </note>
+  
+  <note>
+    <key>agtzaW1wbGUtbm90ZXIqCxIETm90ZSIgYzk4MDBkOTc5ZWNmMWY2NmYwZGM0OGJkNmYwNGE3OTQM</key>
+    <created>2012-06-24T21:38:48</created>
+    <modified>2012-06-24T21:41:07</modified>
+    <content>Android
+======
+
+Unfortunately simplenote does not have an official Android client. Flick note is supposed to be good though...</content>
+  </note>
+  
+</notes>
