@@ -41,8 +41,9 @@ class TomboyRemoteControl(object):
         return unicode(self.tomboy.GetNoteContents(note))
         
     def _parse_tags(self, note):
-        #@TODO: parse XML to get tags
-        return []
+        tom_tags = self.tomboy.GetTagsForNote(note)
+        tags = [str(tag).split(':')[-1] for tag in tom_tags]
+        return tags
         
     def _parse_createdate(self, note):
         ts = self.tomboy.GetNoteCreateDate(note)
