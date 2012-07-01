@@ -121,7 +121,7 @@ class MarkdownTarget(object):
             elif tag == 'large':
                 self.result += '### %s ###\n' % text
             elif tag == 'monospace':
-                self.result += '\t%s' % text   
+                self.result += '    %s' % text   
             elif tag in ('bold', 'italic', 'highlight'):
                 self.result += '*%s*' % text
             elif tag == 'url':
@@ -147,7 +147,7 @@ class MarkdownTarget(object):
         # finishing touches: first line is title, replace tabs with spaces
         doc = re.sub('(?P<title>.+)\n',
                      '# \g<title> #\n', self.result, count=1)
-        doc = doc.replace('\t', '    ')
+        doc = doc.replace('\t', '  ')
         doc = re.sub('\n\*(?P<subtitle>.+)\*\n',
                      '\n#### \g<subtitle> ####\n', doc)
 
